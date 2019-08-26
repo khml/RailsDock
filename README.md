@@ -1,10 +1,23 @@
 # Get Started
 
 ```
-# 1. rails new
+# 1. clone this repository and rename
+$ git clone https://github.com/khml/RailsDock
+
+$ mv RailsDock YourProjectName
+$ cd YourProjectName
+
+# 2. delete git files
+$ rm --irf .git
+
+# 3. setting App name
+# Editing env file like following
+# appName=YourProjectName
+
+# 4. rails new
 $ ./rails_new.sh
 
-# 2. Setting config/database.yml
+# 5. Setting config/database.yml
 # Editing config/database.yml like following
 
 # default: &default
@@ -16,10 +29,10 @@ $ ./rails_new.sh
 #   pool: 5
 
 
-# 3. Build Docker image
+# 6. Build Docker image
 $ docker-compose build
 
-# 4. start containers
+# 7. start containers
 $ docker-compose up -d
 
 ```
